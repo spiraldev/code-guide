@@ -1,0 +1,23 @@
+loc		= {};
+qFoo	= "";
+
+//Set up a new query
+loc.qSrv = new query();		
+loc.qSrv.setDatasource( 'my_dsn' ); 
+loc.qSrv.setName( "qFoo" ); 
+
+//Add some params for the query 
+loc.qSrv.addParam( name="fooID",value="#fooID#",cfsqltype="cf_sql_integer" );
+
+//Query SQL
+savecontent variable="loc.SQL"{
+	writeOutput("
+		SELECT 	name, label, sequence
+		FROM 	tFoo 
+		WHERE   fooID = :fooID  
+		ORDER BY sequence
+	");
+}		
+//execute query
+loc.result 	= loc.qSrv.execute( sql=loc.sql );
+qFoo		= loc.result.getResult();

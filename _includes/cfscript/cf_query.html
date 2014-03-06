@@ -1,0 +1,6 @@
+qFields       = QueryNew("Label,name,sequence", "VarChar,VarChar,Integer");
+
+QueryAddRow(qFields);
+QuerySetCell(qFields, "Name", 'foo_bar' );
+QuerySetCell(qFields, "Label", 'Foo Bar' );
+QuerySetCell(qFields, "sequence", 1 );

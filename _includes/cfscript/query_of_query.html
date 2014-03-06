@@ -1,0 +1,9 @@
+
+loc.queryService = new query();
+loc.queryService.setName("myQuery");
+loc.queryService.setDBType("query");
+
+loc.queryService.setAttributes(sourceQuery=loc.myOtherQuery);//loc.myOtherQuery being the main query
+
+loc.objQueryResult 	= loc.queryService.execute(sql="SELECT [Value] FROM sourceQuery WHERE Col1='foo'");
+loc.queryResult 	= loc.objQueryResult.getResult();
