@@ -26,23 +26,52 @@ layout: default
   </div>
 </div>
 
-<div class="section" id="cfscript-conditions">
+
+
+<div class="section" id="cfscript-misc">
   <div class="col">
     
-    <h3>If / Else If / Else</h3>
-    {% highlight html %}{% include cfscript/ifelse.html %}{% endhighlight %}
+    <h3>Set Var </h3>
+    {% highlight html %}{% include cfscript/setvar.html %}{% endhighlight %}
 	<br />
-    <h3>Immediate If </h3>
-    {% highlight html %}{% include cfscript/iif.html %}{% endhighlight %}
+    
+    <h3>Single Line Comment </h3>
+    {% highlight html %}{% include cfscript/singlelinecomment.html %}{% endhighlight %}
+	<br />
 
+	<h3>Save Content</h3>
+    {% highlight html %}{% include cfscript/savecontent.html %}{% endhighlight %}
+	
   </div>
  
   <div class="col">
-    <h3>Switch Case</h3>
-    {% highlight html %}{% include cfscript/switchcase.html %}{% endhighlight %}
+    <h3>Include CFM File</h3>
+    {% highlight html %}{% include cfscript/includecfmtemplate.html %}{% endhighlight %}
  	<br />
-    <h3>Ternary Operator</h3>
-    {% highlight html %}{% include cfscript/ternaryoperator.html %}{% endhighlight %}
+    
+    <h3>Multi Line Comments</h3>
+    {% highlight html %}{% include cfscript/multilinecomments.html %}{% endhighlight %}
+	<br />
+	
+	<h3>Try / Catch / Throw / Finally / Rethrow</h3>
+    {% highlight html %}{% include cfscript/try.html %}{% endhighlight %}
+
+  </div>
+</div>
+
+<div class="section" id="cfscript-sql">
+  <div class="col">
+    
+    <h3>Transactions</h3>
+    {% highlight html %}{% include cfscript/transactions.html %}{% endhighlight %}
+	<br />
+    
+    
+	
+  </div>
+ 
+  <div class="col">
+    
 
   </div>
 </div>
