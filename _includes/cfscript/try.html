@@ -1,0 +1,10 @@
+try {
+	//throw CF9+
+	throw(message="Oops", detail="xyz");
+} catch (any e) {
+	WriteOutput("Error: " & e.message);
+	rethrow; //CF9+
+} finally { 
+	//CF9+
+	WriteOutput("I run even if no error");
+}
